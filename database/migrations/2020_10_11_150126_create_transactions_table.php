@@ -21,7 +21,7 @@ class CreateTransactionsTable extends Migration
             $table->string('email');
             $table->string('phone_number');
             $table->string('address');
-            $table->integer('transaction_total');
+            $table->decimal('transaction_total', 15, 2);
             $table->string('transaction_status');
 
             $table->softDeletes();
